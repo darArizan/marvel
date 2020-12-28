@@ -5,3 +5,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 40px; }
+
+    .heroes{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    }

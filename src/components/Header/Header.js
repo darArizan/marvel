@@ -11,4 +11,4 @@ class Header extends Component {
     }
 }
 
-export {Header};
+export { Header };

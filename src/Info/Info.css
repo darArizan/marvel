@@ -1,0 +1,23 @@
+.desc{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #040427;
+    font-weight:300;
+}
+
+#char{
+    display: flex;
+    flex-direction: row;
+}
+.move{
+    margin-left: 40px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #060629
+}
+.oneChar{
+    width: 300px;
+    height: 400px;
+}

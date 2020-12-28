@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Hero.css'
+import { Link } from 'react-router-dom'
 
 class Hero extends Component {
     render() {
@@ -7,15 +8,15 @@ class Hero extends Component {
             <div className='card'>
                 <h3>{this.props.data.name}</h3>
                 {/* <img src={this.props.data.thumbnail.path + '/portrait_medium.' +this.props.data.thumbnail.extension}/> */}
-                <img src={this.props.data.thumbnail.path + '.jpg'}/>
+                <img src={this.props.data.thumbnail.path + '.jpg'} />
                 <div className='add'>
-                <button className='info' type='button'>Info</button>
-                <button  className='team' type='button'>Add</button>
+                    <Link to={'/hero/' + this.props.data.id}>Info</Link>
+                    <button className='team' type='button' onClick={() => this.props.addHeroes(this.props.data)}>Add</button>
                 </div>
-               
+
             </div>
         );
     }
 }
 
-export  {Hero};
+export { Hero };
