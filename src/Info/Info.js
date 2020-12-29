@@ -44,14 +44,15 @@ class Info extends Component {
                     {this.state.char.thumbnail && <img src={this.state.char.thumbnail.path + '/portrait_medium.' + this.state.char.thumbnail.extension} />}
                 </div>
                  */}
-                <div id='char'>
-                    <Link className='move' to='/'>Home</Link>
-                    {this.state.char.thumbnail && <img className='oneChar' src={this.state.char.thumbnail.path + ".jpg"} />}
+                <div className='imageDesc'>
+                    <div id='char'>
+                        <Link className='move' to='/'>Home</Link>
+                        {this.state.char.thumbnail && <img className='oneChar' src={this.state.char.thumbnail.path + ".jpg"} />}
+                    </div>
+                    <div class='desc'>
+                        {this.state.char.description}
+                    </div>
                 </div>
-                <div class='desc'>
-                    {this.state.char.description}
-                </div>
-
             </div>
         );
     }

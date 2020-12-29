@@ -1,0 +1,13 @@
+.timHero{
+    background-color: rgba(9, 9, 89, 0.7);
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+}
+   
+
+.delete{
+    width: 49px;
+    height: 24px;
+    border-radius: 5px;
+}

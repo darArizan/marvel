@@ -66,6 +66,13 @@ class Home extends Component {
 
     }
 
+    onHeroDelete = id => {
+        const favourite = [...this.state.favoriteHeroes].filter(hero => hero.id !== id);
+
+        this.setState({
+            favoriteHeroes: favourite
+        })
+    }
 
     render() {
         return (
@@ -74,7 +81,7 @@ class Home extends Component {
                 <Search onSearch={this.setValue} />
                 <div className='main'>
                     <div className="heroes">{this.state.filteredHeroes.map(data => <Hero addHeroes={this.favoriteHeroes} data={data} />)}</div>
-                    <MyTeam data={this.state.favoriteHeroes} />
+                    <MyTeam data={this.state.favoriteHeroes} onDelete={this.onHeroDelete} />
 
                 </div>
 

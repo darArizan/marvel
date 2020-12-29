@@ -6,7 +6,7 @@ class MyTeam extends Component {
     render() {
         return (
             <ul className='myTeam'>
-                {this.props.data.map(hero => <TeamHeroes data={hero} />)}
+                {this.props.data.map(hero => <TeamHeroes data={hero} onDelete={this.props.onDelete} />)}
             </ul>
         );
     }
