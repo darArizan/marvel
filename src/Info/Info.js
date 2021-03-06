@@ -39,14 +39,15 @@ class Info extends Component {
 
         return (
             <div className='red'>
-                <h3>{this.state.char.name}</h3>
+                <Link className='move' to='/'>Home</Link>
+                <h3 className='name'>{this.state.char.name}</h3>
                 {/* <div>
                     {this.state.char.thumbnail && <img src={this.state.char.thumbnail.path + '/portrait_medium.' + this.state.char.thumbnail.extension} />}
                 </div>
                  */}
                 <div className='imageDesc'>
                     <div id='char'>
-                        <Link className='move' to='/'>Home</Link>
+                        
                         {this.state.char.thumbnail && <img className='oneChar' src={this.state.char.thumbnail.path + ".jpg"} />}
                     </div>
                     <div class='desc'>

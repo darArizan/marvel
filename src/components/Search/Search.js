@@ -21,8 +21,8 @@ class Search extends Component {
     render() {
         return (
             <div className='search'>
-                <input type='text' value={this.state.search} placeholder='Search' onChange={this.searchOnChange}></input>
-                <button type='button' onClick={this.submitSearch}>go</button>
+                <input type='text' className='text' value={this.state.search} placeholder='Search' onChange={this.searchOnChange}></input>
+                <button type='button' className='buttonSearch' onClick={this.submitSearch}></button>
             </div>
         );
     }

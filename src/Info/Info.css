@@ -3,21 +3,36 @@
     margin: 0 auto;
     margin-top: 30px;
     font-size: 20px;
-    color: #040427;
+    color: #f1f1f9;
     font-weight:500;
 }
-
-#char{
+  
+  #char{
     display: flex;
     flex-direction: row;
 }
-.move{
-    margin-left: 40px;
+.name{
+    color: #fafafb;
     font-size: 25px;
+    font-weight: 700;
+}
+.move{
+    font-size: 30px;
     cursor: pointer;
-    color: #060629
+    color: #f1f1f9;
+    position: relative;
+    right: 550px;
+    top: 30px;
+    font-weight: 500;
+
+}
+.move:hover{
+    color: rgb(40, 40, 65);
 }
 .oneChar{
-    width: 300px;
+    width: 320px;
     height: 400px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgb(205, 205, 227);
 }
