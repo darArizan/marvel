@@ -1,0 +1,25 @@
+.myTeam{
+    width: 30%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+   
+
+    
+}
+.teamListName{
+    font-size: 30px;
+
+    
+}
+@media(max-width:414px){
+    .myTeam{
+         
+    width: 80%;
+    margin: 0 auto;
+       
+    }
+}
+
+
+

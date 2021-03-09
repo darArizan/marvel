@@ -5,10 +5,11 @@ import { TeamHeroes } from '../TeamHeroes/TeamHeroes'
 class MyTeam extends Component {
     render() {
         return (
-            <ul className='myTeam'>
+            <div className='myTeam'>
+                <h3 className='teamListName'> My team</h3>
                 {this.props.data.map(hero => <TeamHeroes data={hero} onDelete={this.props.onDelete} />)}
-            </ul>
-        );
+            </div>
+        )
     }
 }
 
