@@ -13,6 +13,7 @@
     border-radius: 5px;
     color: rgb(245, 245, 249);
     font-size: 20px;
+    border: 1 px solid black;
 }
 .buttonSearch{
     width: 60px;

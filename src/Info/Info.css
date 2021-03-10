@@ -2,7 +2,7 @@
     width: 500px;
     margin: 0 auto;
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 30px;
     color: #f1f1f9;
     font-weight:500;
 }
@@ -12,19 +12,21 @@
     flex-direction: row;
     width: 80%;
     margin: 0 auto;
+    
 }
 .name{
     color: #fafafb;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 700;
+    padding-top: 50px;
 }
 .move{
-    font-size: 30px;
+    font-size: 35px;
     cursor: pointer;
     color: #f1f1f9;
-    position: relative;
-    right: 550px;
-    top: 30px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
     font-weight: 500;
 
 }
@@ -37,5 +39,36 @@
     display: block;
     margin: 0 auto;
     border: 1px solid rgb(205, 205, 227);
+}
+
+@media(max-width:576px){
+    .name{
+        padding-top: 60px;
+        font-size: 35px;
+    }
+    .desc{
+        width: 400px;
+    }
+}
+@media(max-width:444px){
+    .oneChar{
+        width: 320px;
+        height: 370px;
+    }
+    .desc{
+        width: 300px;
+    }
+}
+@media(max-width:375px){
+    .oneChar{
+        width: 280px;
+        height: 350px;
+    }
+}
+@media(max-width:320px){
+   .oneChar{
+       width: 260px;
+       height: 330px;
+   }
 }
 

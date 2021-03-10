@@ -9,10 +9,11 @@
 }
 .teamListName{
     font-size: 30px;
+    color: #b6b6e6;
 
     
 }
-@media(max-width:414px){
+@media(max-width:444px){
     .myTeam{
          
     width: 80%;

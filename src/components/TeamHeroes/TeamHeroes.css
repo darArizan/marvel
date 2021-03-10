@@ -16,6 +16,9 @@
    height: 200px;
    margin-bottom: 6px;
 }
+.timName{
+    color: #b6b6e6;
+}
    
 
 .delete{
@@ -32,7 +35,7 @@
    
 }
 .delete:hover{
-    color: rgb(229, 229, 247);
+    color: #f9f9fb;
 }
 
 @media(max-width:576px){
@@ -58,8 +61,4 @@
         height: 160px;
     }
 }
-@media(max-width:440px){
-    .timHero{
-        width: 150px;
-    }
-}
+
