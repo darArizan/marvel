@@ -28,4 +28,4 @@ class Search extends Component {
     }
 }
 
-export { Search };
+export { Search }
